@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-// Sin lógica adicional por ahora
+
 </script>
 
 <style scoped>

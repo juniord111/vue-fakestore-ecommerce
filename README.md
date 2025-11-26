@@ -142,12 +142,9 @@ demostrar dominio de:
 
 ## 👨‍💻 Autor
 
-Proyecto desarrollado por **Johan (David Rengifo)**, estudiante de
-ingeniería de sistemas y desarrollador web enfocado en el stack Vue.js +
-Node.js.
-
+Proyecto desarrollado por **Jhojan (David Rengifo)**, estudiante de
+ingeniería de sistemas y desarrollador web enfocado en el stack Vue.js
 ------------------------------------------------------------------------
 
 ¡Gracias por revisar este proyecto! 🚀\
 Siéntete libre de mejorar, extender o personalizar cada módulo.
-# vue-fakestore-ecommerce

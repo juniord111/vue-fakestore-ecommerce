@@ -51,24 +51,90 @@ onMounted(()=>{
 </template>
 
 <style scoped>
-.products-container {
-  padding: 20px;
+/* Contenedor general */
+.product-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Título */
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtítulo */
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Loading y Error */
+.loading,
+.error-message,
+.empty-message {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .loading {
-  font-size: 18px;
-  font-weight: bold;
+  background: #f6f6f6;
+  color: #333;
+  border: 1px solid #ddd;
 }
 
 .error-message {
-  color: red;
-  font-weight: bold;
+  background: #ffe5e5;
+  color: #b40000;
+  border: 1px solid #ffb3b3;
 }
 
+/* GRID estilo tienda */
 .products-grid {
-  margin-top: 20px;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+/* Animación suave de carga */
+.products-grid > * {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajustes visuales opcionales */
+.product-container p {
+  color: #444;
+  font-size: 16px;
+}
+
+/* Diseño tipo Amazon: cajas separadas */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
 }
 </style>
